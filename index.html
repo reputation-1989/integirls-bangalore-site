@@ -1,130 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>INTEGIRLS Bangalore • Chapter</title>
-  <meta name="description" content="INTEGIRLS Bangalore — math competitions and STEM for girls & non-binary students." />
-
-  <!-- external stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEGIRLS Bangalore - Empowering Girls in STEM</title>
+    <meta name="description" content="INTEGIRLS Bangalore empowers girls and non-binary students in mathematics, puzzles, and STEM across India through competitions, workshops, and mentorship.">
+    <meta name="author" content="INTEGIRLS Bangalore">
+    <meta name="keywords" content="INTEGIRLS, mathematics, STEM, girls education, India, Bangalore, competitions, olympiad">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="INTEGIRLS Bangalore - Empowering Girls in STEM">
+    <meta property="og:description" content="Creating a safe, empowering space for girls and non-binary students to explore mathematics confidently.">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home">
-        <img src="assets/logo.png" alt="INTEGIRLS Bangalore logo" id="logo" />
-        <span class="brand-text">INTEGIRLS Bangalore</span>
-      </a>
-
-      <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation">☰</button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#mission">Our Mission</a>
-        <a href="#upcoming">Upcoming Events</a>
-        <a href="#competitions">Competitions</a>
-        <a href="#resources">Resources</a>
-        <a href="#results">Past Results</a>
-        <a href="#team">Our Team</a>
-        <a href="#sponsor">Sponsor Us</a>
-        <a href="#contact">Contact</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1>INTEGIRLS Bangalore</h1>
-        <p class="lead">Empowering girls and non-binary students in maths, puzzles, and STEM across India.</p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="#competitions">See Competitions</a>
-          <a class="btn ghost" href="#contact">Get Involved</a>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="assets/logo.png" alt="INTEGIRLS Bangalore Logo" class="logo">
+                    <span class="brand-text">INTEGIRLS Bangalore</span>
+                </div>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="mainNav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#mission" class="nav-link">Our Mission</a>
+                    <a href="#events" class="nav-link">Upcoming Events</a>
+                    <a href="#competitions" class="nav-link">Competitions</a>
+                    <a href="#resources" class="nav-link">Resources</a>
+                    <a href="#results" class="nav-link">Past Results</a>
+                    <a href="#team" class="nav-link">Our Team</a>
+                    <a href="#sponsor" class="nav-link">Sponsor Us</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </nav>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">INTEGIRLS Bangalore</h1>
+                <p class="hero-subtitle">Empowering girls and non-binary students in mathematics, puzzles, and STEM across India.</p>
+                <div class="hero-buttons">
+                    <a href="#competitions" class="btn btn-primary">See Competitions</a>
+                    <a href="#contact" class="btn btn-secondary">Get Involved</a>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Our Mission -->
     <section id="mission" class="section">
-      <div class="container">
-        <h2>Our Mission</h2>
-        <p>
-          We work to create a safe, empowering space for girls and non-binary students in India to explore mathematics confidently.
-          Our goal is to support young learners — discovery, problem solving, mentorship, and paths to olympiads and international programs.
-        </p>
-      </div>
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="card">
+                <p class="mission-text">We work to create a safe, empowering space for girls and non-binary students in India to explore mathematics confidently. We recognize how gender bias and systemic barriers affect access to STEM for many students, especially non-binary youth. Our goal is to support young learners early—helping them discover joy in problem solving, grow into competitive thinkers, explore STEM pathways, and gain access to opportunities including olympiads, mentorship, and international programs.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="upcoming" class="section">
-      <div class="container">
-        <h2>Upcoming Events</h2>
-        <p>Two free math competitions in 2025–2026 (Fall & Spring). Divisions: 6–8, 9–10, 11–12. Sign-ups open soon.</p>
-      </div>
+    <!-- Upcoming Events -->
+    <section id="events" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="card">
+                <p class="events-text">INTEGIRLS Bangalore will host two free math competitions in the 2025–2026 school year: one in fall and one in spring. There will be three divisions: 6–8, 9–10, and 11–12. Top participants will earn exciting awards and may be selected for our Math Camp led by IMO/EGMO medalists and campers. All girls, female-identifying, and non-binary teens across India may participate—no experience required! Sign-ups for the fall competition will open soon.</p>
+                <div class="signup-notice">
+                    <strong>📢 Sign-ups open soon!</strong>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Competitions -->
     <section id="competitions" class="section">
-      <div class="container">
-        <h2>Competitions</h2>
-        <div class="cards">
-          <article class="card"><h3>Fall Puzzle Hunt</h3><p class="meta">October (TBD) • Team & Individual</p></article>
-          <article class="card"><h3>Spring Math Meet</h3><p class="meta">March (TBD) • Online / In-person</p></article>
-          <article class="card"><h3>Workshops</h3><p class="meta">Year-round mentoring & mock tests</p></article>
+        <div class="container">
+            <h2 class="section-title">Competitions</h2>
+            <div class="competitions-grid">
+                <div class="card competition-card">
+                    <h3 class="card-title">Fall Puzzle Hunt</h3>
+                    <p class="competition-date">October (TBD) • Team & Individual</p>
+                    <p class="card-text">An exciting puzzle-solving competition designed to challenge your creative thinking and problem-solving skills. Work individually or in teams to tackle engaging mathematical puzzles.</p>
+                    <p class="competition-eligibility"><strong>Who can join:</strong> School students up to grade 12</p>
+                </div>
+                <div class="card competition-card">
+                    <h3 class="card-title">Spring Math Meet</h3>
+                    <p class="competition-date">March (TBD) • Online / In-person</p>
+                    <p class="card-text">A comprehensive mathematics competition featuring problem-solving rounds across various topics. Test your skills against peers from across India in a supportive environment.</p>
+                    <p class="competition-eligibility"><strong>Who can join:</strong> School students up to grade 12</p>
+                </div>
+                <div class="card competition-card">
+                    <h3 class="card-title">Workshops & Training</h3>
+                    <p class="competition-date">Year-round</p>
+                    <p class="card-text">Join our ongoing problem-solving sessions, mentoring programs, and mock tests. Receive guidance from experienced mentors and prepare for national and international olympiads.</p>
+                    <p class="competition-eligibility"><strong>Open to all eligible students</strong></p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
+    <!-- Resources -->
+    <section id="resources" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Resources</h2>
+            <div class="card">
+                <div class="resources-list">
+                    <div class="resource-item">
+                        <h3 class="resource-title">📝 Past Problem Sets</h3>
+                        <p>Access previous competition problems to practice and improve your skills.</p>
+                        <a href="#" class="resource-link">Coming soon</a>
+                    </div>
+                    <div class="resource-item">
+                        <h3 class="resource-title">📚 Learning Guides</h3>
+                        <p>Curated study materials and tutorials to help you prepare effectively.</p>
+                        <a href="#" class="resource-link">Coming soon</a>
+                    </div>
+                    <div class="resource-item">
+                        <h3 class="resource-title">🔗 Recommended Reading & Practice Sites</h3>
+                        <p>External resources including Art of Problem Solving, Brilliant.org, and more.</p>
+                        <a href="#" class="resource-link">Coming soon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Results -->
     <section id="results" class="section">
-      <div class="container">
-        <h2>Past Results</h2>
-        <ul class="results-list">
-          <li><strong>2025 Fall Puzzle Hunt:</strong> Example Team — 1st</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="team" class="section">
-      <div class="container">
-        <h2>Our Team</h2>
-        <div class="team-grid">
-          <div class="member"><img src="assets/avatar-placeholder.png" alt=""><h4>Coordinator Name</h4><p class="role">Chapter Lead</p></div>
-          <div class="member"><img src="assets/avatar-placeholder.png" alt=""><h4>Volunteer</h4><p class="role">Events</p></div>
-          <div class="member"><img src="assets/avatar-placeholder.png" alt=""><h4>Mentor</h4><p class="role">Training</p></div>
+        <div class="container">
+            <h2 class="section-title">Past Results</h2>
+            <div class="results-grid">
+                <div class="card result-card">
+                    <h3 class="result-title">2025 Fall Puzzle Hunt</h3>
+                    <div class="result-item">
+                        <span class="result-medal">🥇</span>
+                        <div>
+                            <strong>Team X</strong>
+                            <p>1st Place</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card result-card">
+                    <h3 class="result-title">2024 Spring Math Meet</h3>
+                    <div class="result-item">
+                        <span class="result-medal">🥇</span>
+                        <div>
+                            <strong>Individual Y</strong>
+                            <p>Gold Medal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="results-note">More results will be added as competitions are held.</p>
         </div>
-      </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:bangalore@integirls.org">bangalore@integirls.org</a></p>
-        <form class="contact-form" onsubmit="return false;">
-          <label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" />
-          <label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" />
-          <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
-          <button class="btn primary" type="submit" onclick="alert('For now, email: bangalore@integirls.org')">Send</button>
-        </form>
-      </div>
+    <!-- Our Team -->
+    <section id="team" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="card team-card">
+                    <img src="assets/avatar-placeholder.png" alt="Team member avatar" class="team-avatar">
+                    <h3 class="team-name">Chapter Lead</h3>
+                    <p class="team-role">Leadership & Strategy</p>
+                </div>
+                <div class="card team-card">
+                    <img src="assets/avatar-placeholder.png" alt="Team member avatar" class="team-avatar">
+                    <h3 class="team-name">Events & Outreach</h3>
+                    <p class="team-role">Competition Organization</p>
+                </div>
+                <div class="card team-card">
+                    <img src="assets/avatar-placeholder.png" alt="Team member avatar" class="team-avatar">
+                    <h3 class="team-name">Training Lead</h3>
+                    <p class="team-role">Workshops & Mentorship</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Sponsor Us -->
+    <section id="sponsor" class="section">
+        <div class="container">
+            <h2 class="section-title">Sponsor Us</h2>
+            <div class="card">
+                <p class="sponsor-text">Your support helps us provide free, high-quality mathematics competitions and training to students across India. Sponsorship contributions go toward venue costs, prizes, travel support for participants, operating expenses, and scholarships for our intensive Math Camp. By sponsoring INTEGIRLS Bangalore, you're investing in the next generation of problem solvers and STEM leaders. Help us break down barriers and create opportunities for all students.</p>
+                <p class="sponsor-text"><strong>Interested in sponsoring?</strong> Contact us at <a href="mailto:bangalore@integirls.org" class="email-link">bangalore@integirls.org</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="card contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Email:</strong> <a href="mailto:bangalore@integirls.org" class="email-link">bangalore@integirls.org</a></p>
+                    <p class="contact-note">We typically respond within two weeks. For urgent matters, please include "URGENT" in your subject line.</p>
+                </div>
+                <div class="card contact-form-card">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-note">Note: This form is a placeholder. Please email us directly at bangalore@integirls.org</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
     <section id="faq" class="section">
-      <div class="container">
-        <h2>FAQ</h2>
-        <details><summary>Can I join without experience?</summary><p>Yes — newcomers are welcome.</p></details>
-        <details><summary>No local chapter — can I join?</summary><p>Yes, we accept participants from across India.</p></details>
-      </div>
+        <div class="container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>I'm interested but have no math competition experience. Can I still attend?</summary>
+                    <p>Of course, you should really attend this competition. In the past, many people have stated that INTEGIRLS gave them an entry into math competitions and they had no idea how fun it was until they attended the event. If you would like any pointers on how to prepare, you can feel free to email us at bangalore@integirls.org. We hope to see you at our event(s)!</p>
+                </details>
+                <details class="faq-item">
+                    <summary>I do not have an INTEGIRLS Chapter near my area, but I am interested in participating. Can I still attend?</summary>
+                    <p>We encourage students not only from Bangalore/India to attend, but also other areas as well. You may reach out to us at the links provided at the bottom of this page.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Who can I contact if I have any questions?</summary>
+                    <p>You can contact us through Email or Instagram at the links provided at the bottom of this page. It may take up to two weeks to get a reply from us through email. If it is urgent, you can message us on Instagram or add "URGENT" to the subject line of your email.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>I do not identify as female or non-binary, but I would like to participate. How can I do that?</summary>
+                    <p>If you do not identify as female or non-binary, we encourage you to check out other opportunities we may share. You can contact bangalore@integirls.org to find more activities apt for you.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How can I contribute?</summary>
+                    <p>You may choose to volunteer for us by emailing us at bangalore@integirls.org or can donate to our non-profit here (link coming soon!). You can also email us at bangalore@integirls.org to receive more information about how you can help. YOUR HELP MAKES A DIFFERENCE TO US.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How many competitions will you conduct throughout the year?</summary>
+                    <p>We are targeting to host two competitions a year: one in the fall and one in the spring. More details about these competitions will be available on this website soon.</p>
+                </details>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <p>INTEGIRLS Bangalore • <a href="mailto:bangalore@integirls.org">bangalore@integirls.org</a></p>
-        <p class="muted">© <span id="current-year"></span> INTEGIRLS Bangalore</p>
-      </div>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> INTEGIRLS Bangalore</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+                <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
