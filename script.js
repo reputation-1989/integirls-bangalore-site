@@ -100,27 +100,53 @@ document.addEventListener('DOMContentLoaded', function() {
     
     window.addEventListener('scroll', highlightNavLink);
     
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for scroll-triggered animations
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -80px 0px'
     };
     
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('visible');
             }
         });
     }, observerOptions);
     
-    // Observe cards and sections
-    const animatedElements = document.querySelectorAll('.card, .section-title');
-    animatedElements.forEach(function(el) {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    // Observe cards, sections, and other elements
+    const cards = document.querySelectorAll('.card');
+    const sectionTitles = document.querySelectorAll('.section-title');
+    const teamCards = document.querySelectorAll('.team-card');
+    const resourceItems = document.querySelectorAll('.resource-item');
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    // Add animation classes and observe
+    cards.forEach(function(el, index) {
+        el.classList.add('animate-on-scroll');
+        el.style.transitionDelay = (index * 0.1) + 's';
+        observer.observe(el);
+    });
+    
+    sectionTitles.forEach(function(el) {
+        observer.observe(el);
+    });
+    
+    teamCards.forEach(function(el, index) {
+        el.classList.add('animate-on-scroll');
+        el.style.transitionDelay = (index * 0.15) + 's';
+        observer.observe(el);
+    });
+    
+    resourceItems.forEach(function(el, index) {
+        el.classList.add('animate-on-scroll');
+        el.style.transitionDelay = (index * 0.1) + 's';
+        observer.observe(el);
+    });
+    
+    faqItems.forEach(function(el, index) {
+        el.classList.add('animate-on-scroll');
+        el.style.transitionDelay = (index * 0.08) + 's';
         observer.observe(el);
     });
     
