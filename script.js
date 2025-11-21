@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       siteNav.classList.toggle("active");
     });
   }
+  var y = new Date().getFullYear();
   var el = document.getElementById("current-year") || document.getElementById("current-year");
-  if (el) el.textContent = new Date().getFullYear();
+  if (el) el.textContent = y;
 });
